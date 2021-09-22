@@ -31,7 +31,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (!mail || !name || !firstname || !message) {
-      alert("Merci de remplir tous les champs");
+      alert("Por favor, preencha todos os espaços em branco");
     } else {
       emailjs.sendForm(
         "service_sj798oe",
@@ -47,7 +47,7 @@ const ContactForm = () => {
       //     console.log(error.text);
       //   }
       // );
-      alert("Votre Message a été envoyé avec succès !!");
+      alert("Sua mensagem foi enviada com sucesso !!");
       e.target.reset();
     }
   };
